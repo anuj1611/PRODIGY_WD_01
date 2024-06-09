@@ -1,0 +1,171 @@
+/* style.css */
+
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://wallpapercave.com/wp/wp12163057.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    image-resolution: 100%;
+}
+
+
+header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:darkseagreen;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+
+.logo p {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#get-started {
+    font-family: cursive;
+    margin-right: 40px;
+}
+
+#tagline {
+    text-align: center;
+    font-size: 50px;
+}
+
+.headings {
+    font-size: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: text-shadow 0.1s ease;
+}
+
+nav ul li a:hover {
+    text-shadow: 2px 2px 4px black;
+    color:darkslategray;
+}
+
+button {
+    background-color:rgb(67, 67, 67);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100px;
+    font-family: cursive;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color:darkslategray ;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust this according to your preference */
+    padding: 10px;
+}
+
+.gallery img {
+    width: calc(20% - 20px); /* 20% width for each image with some space between */
+    margin-bottom: 20px;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 200px; /* Add this line to ensure consistent image height */
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#Spring img {
+    box-shadow: 0px 4px 10px rgba(255, 50, 100, 0.8);
+}
+
+#Winter img{
+    box-shadow: 0px 4px 10px rgb(255, 255, 255);
+}
+
+#Summer img{
+    box-shadow: 0px 4px 8px rgba(139, 69, 19, 0.7);
+}
+
+#Autumn img {
+    box-shadow: 0px 4px 8px rgba(255, 153, 0, 0.7);
+
+
+}
+footer {
+    background-color: rgba(143, 188, 143, 0.5);/* Dark Olive Green with 80% opacity */
+    color: white;
+    padding: 1px 5px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links li a:hover {
+    color: black;
+}
